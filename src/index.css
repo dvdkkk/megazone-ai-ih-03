@@ -3822,6 +3822,159 @@ button, input, select {
   .faq-answer {
     font-size: 16.5px !important;
     line-height: 1.7 !important;
+    margin-top: 10px;
   }
 }
+
+/* ==========================================================================
+   Consultation CTA Card Styles
+   ========================================================================== */
+.apply-consult-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.apply-consult-badge-row {
+  display: flex;
+  margin-bottom: -4px;
+}
+
+.apply-consult-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: rgba(91, 80, 246, 0.1);
+  color: #5b50f6;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  border: 1px solid rgba(91, 80, 246, 0.2);
+}
+
+.apply-pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #5b50f6;
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse-dot-anim 1.5s infinite;
+}
+
+@keyframes pulse-dot-anim {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+}
+
+.apply-consult-title {
+  font-size: 26px;
+  font-weight: 900;
+  color: #000000;
+  letter-spacing: -0.02em;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.apply-consult-title .purple-dot {
+  color: #5b50f6;
+}
+
+.apply-consult-desc {
+  font-size: 14.5px;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.apply-consult-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 8px 0;
+}
+
+.apply-checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.45;
+}
+
+.apply-check-icon {
+  color: #10b981;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.apply-naver-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #03cf5d; /* Naver green matching styling */
+  color: #ffffff !important;
+  text-decoration: none;
+  padding: 16px 24px;
+  border-radius: 16px;
+  font-weight: 800;
+  box-shadow: 0 6px 20px rgba(3, 207, 93, 0.3);
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  cursor: pointer;
+  border: none;
+  width: 100%;
+}
+
+.apply-naver-btn:hover {
+  background-color: #02b34f;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(3, 207, 93, 0.45);
+}
+
+.apply-naver-btn:active {
+  transform: translateY(0);
+}
+
+.apply-naver-btn-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.apply-naver-logo-tag {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 900;
+  padding: 3px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.02em;
+}
+
+.apply-naver-btn-text {
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.apply-naver-btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
 
